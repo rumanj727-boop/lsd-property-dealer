@@ -137,7 +137,7 @@ export default async function PlotPage({ params }: { params: Promise<{ slug: str
                 <h3 className="font-playfair text-2xl font-bold mb-4 text-[#1E3A2F]">Infrastructure & Facilities</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="flex items-center gap-3 p-3 border border-[#1E3A2F]/10 rounded-lg">
-                    {plot.waterSupply || plot.water ? <CheckCircle2 className="text-[#25D366]" /> : <XCircle className="text-red-500" />}
+                    {plot.water ? <CheckCircle2 className="text-[#25D366]" /> : <XCircle className="text-red-500" />}
                     <span className="font-medium text-[#1E3A2F]">Water Connection</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 border border-[#1E3A2F]/10 rounded-lg">
