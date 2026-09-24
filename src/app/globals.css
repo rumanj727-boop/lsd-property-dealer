@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--foreground);
+  --color-popover: var(--background);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: #FBFBF9;
+  --foreground: #111111;
+  --card: #F5F3EF;
+  --card-foreground: #1A1A1A;
+  --popover: #F5F3EF;
+  --popover-foreground: #111111;
+  --primary: #1E3A2F;
+  --primary-foreground: #FFFFFF;
+  --secondary: #C5A880;
+  --secondary-foreground: #1A1A1A;
+  --muted: #F0EFEB;
+  --muted-foreground: #6B7280;
+  --accent: #D4A843;
+  --accent-foreground: #111111;
+  --destructive: #EF4444;
+  --border: #E5E2DC;
+  --input: #E5E2DC;
+  --ring: #1E3A2F;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body { overflow-x: hidden;
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #dfba73 0%, #c5a059 50%, #947132 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Google Translate overrides */
+.goog-te-gadget { font-family: inherit !important; color: transparent !important; }
+.goog-te-gadget .goog-te-combo { color: #1E3A2F; border: none; background: transparent; outline: none; font-size: 14px; font-weight: 500; cursor: pointer; padding: 0; margin: 0; }
+.goog-te-banner-frame { display: none !important; }
+body { overflow-x: clip; top: 0 !important; }
+
+/* Hide ALL Google Translate UI */
+.goog-te-banner-frame.skiptranslate { display: none !important; }
+.goog-te-gadget-icon { display: none !important; }
+.goog-te-gadget-simple { background-color: transparent !important; border: none !important; }
+#goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
+.goog-text-highlight { background-color: transparent !important; box-shadow: none !important; }
+html { top: 0 !important; margin-top: 0 !important; scroll-behavior: auto !important; }
+body { top: 0 !important; margin-top: 0 !important; }
+.skiptranslate > iframe { display: none !important; }
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd { display: none !important; }
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf { display: none !important; }

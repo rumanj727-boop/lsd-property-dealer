@@ -1,0 +1,38 @@
+export interface Property {
+  id: string;
+  slug: string;
+  title: string;
+  subtitle: string;
+  type: string;
+  subType: string;
+  bhk: number;
+  bedrooms: number;
+  bathrooms: number;
+  balconies: number;
+  carpetArea: number;
+  superBuiltupArea: number;
+  price: number;
+  pricePerSqFt: number;
+  floorNumber: number | null;
+  totalFloors: number;
+  facing: string;
+  furnishing: string;
+  ageOfConstruction: string;
+  possessionStatus: string;
+  expectedPossession?: string;
+  parking: string;
+  maintenanceCharges: number;
+  builderName: string;
+  societyName: string;
+  ownership: string;
+  address: string;
+  locality: string;
+  city: string;
+  state: string;
+  pincode: string;
+  description: string;
+  amenities: string[];
+  images: string[];
+  featured: boolean;
+  status: string;
+}
